@@ -1,9 +1,12 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
+  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background: rgb(114,211,255);
+    background: linear-gradient(200deg, rgba(114,211,255,1) 0%, rgba(29,34,184,1) 100%);
 }
 
 a {
@@ -13,4 +16,243 @@ a {
 
 * {
   box-sizing: border-box;
+} */
+
+
+
+@keyframes menu1 {
+  from{top:-10rem ; }
+  to{top:9rem ;}
+}
+@keyframes menu2 {
+  0%{top:-10rem}
+  65%{top: 9rem;}
+  100%{top:12rem}
+}
+@keyframes menu3 {
+  0%{top:-10rem}
+  55%{top: 9rem;}
+  100%{top:15rem}
+}
+@keyframes menu4 {
+  0%{top:-10rem}
+  30%{top: 9rem;}
+  100%{top:18rem}
+}
+@keyframes menu5 {
+  0%{top:-10rem}
+  30%{top: 9rem;}
+  100%{top:21rem}
+}
+
+@keyframes menu {
+  from { transform: rotate(280deg);}
+  to { transform: rotate(0deg);}
+}
+@keyframes btn {
+  from{background-color: rgb(252,1,1);}
+  to{background-color:rgba(1,93,233,1) ;}
+}
+
+@keyframes form {
+  from{top: -40rem;}
+  to{top:6rem}
+}
+
+@keyframes history {
+  from{right: -20rem;}
+  to{right: 0rem;}
+}
+.header{
+  background: rgb(252,1,1);
+background: linear-gradient(293deg, rgba(252,1,1,1) 0%, rgba(1,93,233,1) 100%);
+
+}
+
+.head{
+  height: 100vh;
+  background: rgb(252,1,1);
+  background: linear-gradient(293deg, rgba(252,1,1,1) 0%, rgba(1,93,233,1) 100%);
+}
+
+
+
+.navbar-custom{
+  height: 5rem;
+  border-bottom: 2px solid black;
+  align-items: center !important;
+}
+
+.border-class{
+  border: 2px solid white !important;
+}
+
+.border-class:hover{
+  border-color:rgb(252,1,1) !important;
+  animation-name: btn;
+  animation-duration: 1s;
+  background-color: rgba(1,93,233,1);
+  box-shadow: 1px 1px 10px rgb(36, 36, 36);
+}
+
+.font{
+  font-size: 22px;
+}
+
+.menu{
+  float: right;
+}
+
+.hid{
+  display: none;
+}
+
+.show-items{
+    height: 100vh;
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    background-color:transparent;
+    position: absolute;
+}
+
+.show-items li{
+  list-style: none;
+  position: absolute;
+  left: 45%;
+}
+
+.animat1{
+  animation-name: menu1;
+  animation-duration: .2s;
+  top: 9rem;
+}
+.animat2{
+  animation: menu2 .4s  ;
+  top: 12rem;
+  
+}
+.animat3{
+  animation-name: menu3;
+  animation-duration: .6s;
+  top: 15rem;
+  
+}
+.animat4{
+  animation-name: menu4;
+  animation-duration: .8s;
+  top: 18rem;
+  
+}
+.animat5{
+  animation-name: menu5;
+  animation-duration: 1s;
+  top: 21rem;
+  
+}
+.show-items a{
+  color: rgb(211, 211, 211) !important;
+  font-size: 36px;
+  font-weight: bold;
+}
+.show-items a:hover{
+  text-decoration: none;
+  
+}
+
+
+.show-quote{
+  position: absolute;
+  background-color: white;
+  top: 6rem;
+  height: auto;
+  width: 75%;
+  margin-left: 12.5%;
+  display: flex ;
+  animation: form .6s ease-in-out;
+}
+
+.history{
+  height: 100vh !important;
+  background: rgb(252,1,1);
+  background: linear-gradient(293deg, rgba(252,1,1,1) 0%, rgba(1,93,233,1) 100%);}
+
+@media screen and (max-width:800px){
+  .call{
+      display: none;
+  }
+  .menu{
+      float: right;
+  }
+  .show-items li{
+    list-style: none;
+    position: absolute;
+    left: 45%;
+  }
+}
+
+.history-head{
+  font-size: 60px !important;
+  margin-top: 5rem;
+}
+
+.history-btn:hover{
+    background-color: whitesmoke;
+    color: red !important;
+    border-color: red !important;
+    box-shadow: 2px 2px 10px rgb(104, 104, 104) !important;
+}
+.historyimg{
+    /* animation: history 1s; */
+    position: relative;
+}
+
+.contact-head{
+  position: absolute !important;
+  top: 40%;
+  left: 4rem;
+}
+
+.font-bold{
+  font-size: 42px;
+  font-weight: bold;
+}
+.border-right-color{
+  border-right: 2px solid rgb(224, 91, 169);
+}
+
+.quate-area{
+  height: 40vh;
+  background: rgb(252,1,1);
+  background: linear-gradient(293deg, rgba(252,1,1,1) 0%, rgba(1,93,233,1) 100%);
+}
+
+
+
+@media screen and (max-width:700px){
+  .call{
+      display: none;
+  }
+  .quote{
+      display: none !important;
+  }
+  .show-items li{
+    list-style: none;
+    position: absolute;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width:480px){
+  .call{
+      display: none;
+  }
+  .quote{
+      display: none !important;
+  }
+  .show-items li{
+    list-style: none;
+    position: absolute;
+    left: 30%;
+  }
 }
